@@ -1,4 +1,5 @@
 # PragmatechFoundationProject
 
+Website project to be built within a 120-hour foundation program.
 
-Project idea: "https://ninka.az/en/"
+Template: "https://ninka.az/en/"

@@ -6,11 +6,12 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.col-2{
+.nav-brand{
     margin: 5px auto 5px 0;
 }
 .nav-bar{
     padding: 30px 0px;
+    position: fixed;
 }
 .nav-brand img{
     height: 100px;
@@ -22,12 +23,12 @@ body{
     display: flex;
     justify-content: flex-end;
 }
-.nav{
+.nav-menu{
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.nav ul li{
+.nav-menu ul li{
     display: inline-block;
     margin: auto 10px;
 }
@@ -36,17 +37,25 @@ a{
     color: white;
     text-decoration: none;
 }
+
 .content{
     color: #ffffff;
     text-align: center;
+    margin-top: 250px;
+}
+h1{
     font-family: 'Playfair Display', serif;
-    font-weight: bolder;
     font-style: normal;
-    font-size: 75px;
+    font-size: 36px;
+    line-height: 86px;
+    font-weight: 900;
 }
-.content-2{
-    color: white;
+h1.font-2x {
+    font-size: calc(36px * 2);
 }
-.content-3{
-    color: white;
+p{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
 }

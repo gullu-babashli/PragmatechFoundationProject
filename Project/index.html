@@ -17,18 +17,29 @@
 <body>
     <!--fixed nav-bar & general info panel -->
     <section id="header">
+    <div class="bckg-photo">
+    <div class="layer">
     <div class="fix-nav-bar">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row flex justify-content-between">
             <div class="col-2">
                 <div class="nav-brand">
-                <img src="img/Logo-white-big1.png" alt="Ninka Cards and Gifts">
+                <img src="img/Logo-white-square.png" alt="Ninka Cards and Gifts">
                 </div>
             </div>
             <div class="col-6">
                 <div class="nav-menu">
                 <ul>
-                    <li><a href="#">Catalog</a></li>
+                    <li class="catalog"><a href="#">Catalog</a>
+                        <!-- <div class="catalog-menu">
+                            <ul>
+                                <li>Cards<i class="fa fa-angle-right"></i></li>
+                                <li>Photo Products<i class="fa fa-angle-right"></i></li>
+                                <li>Bridal<i class="fa fa-angle-right"></i></li>
+                                <li>Ninka Merchandise<i class="fa fa-angle-right"></i></li>
+                            </ul>
+                        </div> -->
+                    </li>
                     <li><a href="#">Corporate</a></li>
                     <li><a href="#">Bridal</a></li>
                     <li><a href="#">About Us</a></li>
@@ -41,27 +52,29 @@
     </div>
     </div>
 
-    <div class="row">
+    <div class="row flex justify-content-between">
         <div class="col-12">
             <div class="general-info">
-            <h1 class="font-2x">CARDS & GIFTS</h1>
+            <h1 style="font-size: 72px; line-height: 86px;">CARDS & GIFTS</h1>
             <p>We create cards, albums and other memorable hand made products. We put our hearts and souls into every order making sure your love and ours can <br>be felt throughout the gift.</p>
             <br>
             <p> Office Hours: Monday-Friday, 10:00-19:00</p>
             <br>
-            <h1>FREE DELIVERY*</h1>
-            <p>*On orders exceeding 65 AZN. Within city bounds.</p>
+            <h1 style="margin-bottom: 10px;">FREE DELIVERY*</h1>
+            <p style="margin-bottom: 10px;">*On orders exceeding 65 AZN. Within city bounds.</p>
             <button class="order-btn">ORDER
             <i class="fa fa-angle-right"><a href="https://ninka.az/en/catalog"></a></i>
             </button>
             </div>
         </div>
     </div>
+    </div>
+    </div>
     </section>
 <!--White board & Cards, Gifts,Invitations-->
     <section id="second-line">
         <div class="container">
-            <div class="row">
+            <div class="row flex justify-content-between">
                 <div class="col-4">
                     <div class="second-line-item">
                     <img src="img/ramki-ruki-1.png">
@@ -88,14 +101,18 @@
     </section>
 <!--Empty panel with background photo & Popular Products --->
     <section id="PopularProcucts">
-        <div class="container-fluid">
-            <h1>Popular Products</h1>
+        <div class="container-fluid layer">
+            <div class="row">
+            <div class="col-12">
+                <h1 style="padding-top: 80px;"> Popular Products</h1>
+            </div>
+            </div>
         </div>
     </section>
 <!--White panel & Cards images -->
     <section id="forth-line">
         <div class="container">
-            <div class="row">
+            <div class="row flex justify-content-between">
                 <div class="col-4">
                     <div class="forth-line-item">
                     <img src="img/Image-from-iOS-2-3.jpg">
@@ -112,6 +129,100 @@
                     <div class="forth-line-item">
                     <img src="img/Image-from-iOS-1-1.jpg">
                     <h2>Giftboxes</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container" style="width: 900px;">
+        <div class="row">
+            <div class="testimonials-head">
+            <h1>Testimonials</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="users">
+                <div class="user">
+                    <img src="img/Testimonial-3-150x150.jpeg" alt="">
+                </div>
+                <div class="user">
+                    <img src="img/Testimonial-2-final-150x150.jpeg" alt="">
+                </div>
+                <div class="user">
+                    <img src="img/Ekaterina-150x150.jpg" alt="">
+                </div>
+                <div class="user">
+                    <img src="img/Aydan-2-1-150x150.jpg" alt="">
+                </div>
+                <div class="user">
+                    <img src="img/Testimonial-5-1-150x150.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+            <div class="users-quote">
+                <div class="tuncer-quote">
+                    <p>The staff is very friendly and motivated on delivering the best they can. They are open to hear whatever you have to say and welcome any feedback throughout the interaction. I was really touched by how deep the meanings in the card could go and it even had a pretty drawing of her in the middle of the card. They actually delivered my card a day before the deadline. :) To sum up, it was a 5-star experience for me and much recommended for the people seeking out-of-box gifts.<p>
+                    <h4>Tuncer</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- Bottom section -->
+    <section id="bottom">
+        <div class="container">
+            <div class="row flex justify-content-between">
+                <div class="col-3">
+                    <div class="text-items">
+                    <div class="text-item-head">
+                    <h1>NINKA CARDS</h1>
+                    </div>
+                    <div class="text-item-body">
+                    <p>Handmade cards and albums. We try to make every order unique, concentrating on every minute detail to achieve this goal.</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="text-items">
+                    <div class="text-item-head">
+                    <h1>CONTACTS</h1>
+                    </div>
+                    <div class="text-item-body">
+                    <p>Passage 1901, 2nd Floor, Nigar Rafibeyli str., AZ1005 Baku, Azerbaijan</p>
+                    <br>
+                    <p>Monday-Friday, 10:00-19:00</p>
+                    <br>
+                    <p>order@ninka.az</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="text-items">
+                    <div class="text-item-head">
+                    <h1>CONTACT US</h1>
+                    </div>
+                    <div class="text-item-body">
+                    <p>NAME</p>
+                    <hr>
+                    <p>EMAIL</p>
+                    <hr>
+                    <p>TEXT</p>
+                    <hr>
+                    <button class="send-btn">SEND</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="text-items">
+                    <div class="text-item-head">
+                    <h1>INSTAGRAM</h1>
+                    </div>
+                    <p>...</p>
                     </div>
                 </div>
             </div>

@@ -1,40 +1,77 @@
 body{
     font-family: 'Open Sans', sans-serif;
-
+    position: relative;
 }
+
 /*fixed nav-bar & general info panel*/
-#header{
-   background-image: url(/img/Image-from-iOS-1666x1080.jpg);
-    background-color: black;
- /*   opacity: 0.7;*/
+.bckg-photo{
+    background-image: url(/img/Image-from-iOS-1666x1080.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+.layer{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, .7);
+    display: block;
+    position: relative;
+    top: 0px; 
+    left: 0px;
+    z-index: 3;
 }
 
 .fix-nav-bar{
     width: 100%;
-    background-color: #2F2E2F;
-    opacity: 1;
     position: fixed;
     padding: 15px auto;
-    margin: ;
+    margin-top: 30px;
+}
+
+.fix-nav-bar:hover{
+    background-color: #2F2E2F;
+
 }
 
 .nav-brand img{
     height: 100px;
     align-items: center;
-    margin: 5px 180px;
+    margin: 24px auto auto 162px;
 }
-
 .nav-menu{
-    padding: 50px;
+    padding-left: 85px;
+    position: relative;
 }
-
 .nav-menu ul li{
     display: inline-block;
-    margin: auto 10px;
+    margin: 60px 10px;
+    font: 14px sans-serif;
+    font-style: normal;
+    line-height: 24px;
+    font-weight: 300;
 }
+li:hover{
+    background: rgba(47,46,47,0.8);
+    color: white;
+}
+/* .catalog:hover .catalog-menu{
+    
+}
+.catalog-menu{
+    position: absolute;
+    background: rgba(47,46,47,0.8);
+}
+.catalog-menu ul li{
+    display: block;
+    list-style: none;
+}
+
+li:hover .catalog-menu{
+    display: block;
+} */
 
 a{
     color: white;
@@ -45,18 +82,15 @@ a{
     color: #ffffff;
     text-align: center;
     margin-top: 250px;
-
+    margin-bottom: 90px;
 }
 
 h1{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display';
     font-style: normal;
     font-size: 36px;
-    line-height: 86px;
+    line-height: 43px;
     font-weight: 900;
-}
-h1.font-2x {
-    font-size: calc(36px * 2);
 }
 
 p{
@@ -114,16 +148,13 @@ h2{
 /*Empty panel with background photo & Popular Products*/
 #PopularProcucts{
     background-image: url(/img/Image-from-iOS-1666x1080.jpg);
-    background-color: black;
-    /*opacity: 0.7; */
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
     height: 250px;
     color: white;
     text-align: center;
-    display: flex;
-    align-items: center;
+    z-index: 1;
 }
 /*White panel & Cards images*/
 #forth-line{
@@ -141,4 +172,86 @@ h2{
     height: 100%;
     width: 100%;
     margin: 20px;
+}
+
+/* Testimonials */
+#testimonials{
+    background: #F8F8F8;
+    padding: 30px 0px 30px 0px;
+}
+.testimonials-head{
+    margin: 50px;
+}
+
+#testimonials h1{
+    text-align: center;
+}
+.users{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 50px;
+}
+.user{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    cursor: pointer;
+}
+.user img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: all .2s ease;
+}
+.user img:hover{
+    border: 5px solid black;
+}
+.users-quote{
+    width: 100%;
+}
+.users-quote h4{
+    text-align: center;
+    margin: 30px 0px;
+}
+/* Bottom section */
+#bottom{
+    background: white;
+    padding: 50px;
+}
+.text-items{
+    margin: 10px;
+    padding: 10px;
+}
+.text-item-head h1{
+    font-family:"Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #2f2e2f;
+
+}
+.text-item-head::after{
+    content: '';
+    display: block;
+    background-color: #222222;
+    left: 0;
+    height: 3px;
+    width: 40px;
+    margin: 30px 0px;
+}
+
+.text-item-body{
+    width: 100%;
+}
+
+.send-btn{
+    background: black;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.send-btn:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
 }

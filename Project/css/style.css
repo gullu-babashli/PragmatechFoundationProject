@@ -29,10 +29,13 @@ body{
     position: fixed;
     padding: 15px auto;
     margin-top: 30px;
+    background: transparent;
+    transition: .3s ease;
 }
 
 .fix-nav-bar:hover{
     background-color: #2F2E2F;
+    transform: translateY(-30px);
 
 }
 
@@ -52,26 +55,40 @@ body{
     font-style: normal;
     line-height: 24px;
     font-weight: 300;
+    list-style: none;
+    cursor: pointer;
 }
 li:hover{
     background: rgba(47,46,47,0.8);
     color: white;
 }
-/* .catalog:hover .catalog-menu{
-    
+.catalog{
+    position: relative;
+    display: inline-block;
 }
-.catalog-menu{
+
+.dropdown-menu{
+    /* display: none; */
     position: absolute;
-    background: rgba(47,46,47,0.8);
+    background: rgba(47,46,47,0.5);
+    width: 150px;
+
 }
-.catalog-menu ul li{
+.dropdown-menu ul{
     display: block;
     list-style: none;
 }
+.dropdown-menu ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: white;
 
-li:hover .catalog-menu{
+}
+
+.catalog:hover .dropdown-menu{
     display: block;
-} */
+}
 
 a{
     color: white;
@@ -190,6 +207,7 @@ h2{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-bottom: 50px;
+
 }
 .user{
     width: 90px;
@@ -202,6 +220,7 @@ h2{
     height: 100%;
     border-radius: 50%;
     transition: all .2s ease;
+    box-sizing: border-box;
 }
 .user img:hover{
     border: 5px solid black;

@@ -331,14 +331,14 @@ h1, h2, h3, h4, h5{
 }
 
 /* about us page */
-#about-header{
+#secondary-header{
     background: url(../img/bg-about.jpg) center/ cover no-repeat;
     height: 23em;
     overflow: hidden;
     margin-top: 4.5em;
 }
 
-#about-header h2{
+#secondary-header h2{
     text-align: center;
     font-size: 50px;
     color: #fff;
@@ -369,3 +369,94 @@ h1, h2, h3, h4, h5{
     margin-right: 10px;
 }
 
+/* gallery page */
+#gallery .grid-container{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+/* what we offer page */
+#services .grid-container{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+}
+#services .numb{
+    color: rgba(21, 21, 21, 0.1);
+    font-family: 'Lora', serif;
+    font-size: 70px;
+    font-weight: 600;
+}
+#services span i{
+    font-size: 70px;
+    color: #f74860;
+    margin-left: 30px;
+    text-align: left;
+}
+#services h5{
+    font-size: 18px;
+    color: #151515;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+}
+#services p{
+    text-align: left;
+    line-height: 150%;
+}
+
+
+.pricing{
+    background: #f5f5f5;
+    border-radius: 6px;
+    box-shadow: 3px 6px 6px 0 rgb(0 0 0 / 11%);
+    margin-right: 40px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+.pricing-header{
+    overflow: hidden;
+}
+.pricing-header .capt{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    margin: 50px 60px;
+    
+}
+.ph-1{
+    background: url(../img/pricing-1-346x229.jpg) center/ cover no-repeat;
+}
+.ph-2{
+    background: url(../img/pricing-2-346x229.jpg) center/ cover no-repeat;
+}
+.ph-3{
+    background: url(../img/pricing-3-346x229.jpg) center/ cover no-repeat;
+}
+
+#goods h4{
+    color: #fff;
+    font-size: 36px;
+    font-style: normal;
+}
+#goods s{
+    color: #fff;
+    font-size: 20px;
+    font-style: normal;
+    margin-right: 10px;
+}
+
+.pricing-body ul{
+    list-style: none;
+    text-align: center;
+    line-height: 200%;
+    margin: 25px 0;
+}
+.cart-btn{
+    border: 1px solid #000;
+    background: none;
+    padding: 10px 25px;
+    margin: 0 110px 25px 110px;
+}

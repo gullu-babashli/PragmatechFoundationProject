@@ -1,6 +1,6 @@
-#PragmatechFoundationProject
+# Güllü Babaşlı
 
-
-Website projects and tasks to be carried out within a 120-hour foundation program.
-
-[Main Project](https://www.templatemonsterpreview.com/demo/86751.html)
+## Haqqımda qısa məlumat
+- Tədrisə başladığım tarix : 27 Mart 2021
+- Tədrisi başa vurduğum tarix :
+- Tədris müddətində hədəflədiyim layihə şablon(ları) :[Şablon1](https://www.templatemonsterpreview.com/demo/86751.html)
